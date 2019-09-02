@@ -1,14 +1,19 @@
-first_number = float(input("Enter the first number: "))
-second_number = float(input("Enter the second number: "))
-operation = input("Enter operation: ")
+first_number = float(input("First number: "))
+second_number = float(input("Second number: "))
+operation = input("Operation: ")
+
+result = None
 
 if operation == "+":
-    print(first_number + second_number)
+    result = first_number + second_number
 elif operation == "-":
-    print(first_number - second_number)
+    result = first_number - second_number
 elif operation == "*":
-    print(first_number * second_number)
+    result = first_number * second_number
 elif operation == "/":
-    print(first_number / second_number)
+    result = first_number / second_number
 else:
     print("Unsupported operation")
+
+if result is not None:
+    print(result)
