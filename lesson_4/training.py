@@ -1,25 +1,67 @@
 # Напишите код в соответствии с инструкциями в задании
 """Присвойте переменной, счетчику цикла “x” значение 1
-Выведите на консоль, с помощью цикла с предусловием, цифры от 1 до 5, каждую в отдельной строке """
+Выведите на консоль, с помощью цикла с предусловием, цифры от 1 до 5, каждую в отдельной строке
 x = 1
 while x <= 5:
     print(x)
     x += 1
+"""
 
 # Напишите код в соответствии с инструкциями в задании
 """Напишите цикл while, который бы использовал переменную number, 
 и в теле цикла предлагал ввести число использую переменную str_. 
 И завершал бы работу при вводе любого отрицательного числа. 
-number = 0 str_ = "Enter a positive integer: " # ... # code # ... print("You have entered", number) """
+number = 0 str_ = "Enter a positive integer: " # ... # code # ... print("You have entered", number)
 number = 0
 str_ = "Enter a positive integer: "
 while number >= 0:
     number = int(input(str_))
 print("You have entered", number)
+ """
 
 # Напишите код в соответствии с инструкциями в задании
 """Напишите бесконечный цикл, который бы завершался вводом в консоли слова exit.
-Используйте переменную response. response = "" # ... # code # ... """
+Используйте переменную response. response = "" # ... # code # ... 
 response = ""
-while response != "exit":
-    response = input("Type 'exit' to exit: ")
+while True:
+    response = input()
+    if response == "exit":
+        break
+"""
+
+# Напишите код в соответствии с инструкциями в задании
+"""Используя цикл for выведите все чётные числа в диапазоне от 1 до 10 включительно. 
+Переменная number – счетчик цикла. Использовать оператор continue. # ... # code # ... print("Current number is", number)
+for number in range(1, 11):
+    if number % 2 != 0:
+        continue
+    print("Current number is", number)
+"""
+
+# Исправьте ошибки в коде
+"""Найдите и исправьте ошибки в следующем коде программы проверки пароля:
+attempts_left = 3
+while attempts_left > 0:
+    attempts_left -= 1
+    password = input("Enter your password ")
+    if password == "98abc":
+        print("Access granted")
+        break
+else:
+    print("Access denied")
+"""
+
+# Напишите код в соответствии с инструкциями в задании
+"""Используя цикл со счетчиком, напишите код, который выводит на консоль числа от 0 до 9, каждую в новой строке. 
+В качестве итератора используйте переменную i
+for i in range(10):
+    print(i)
+"""
+
+# Напишите код в соответствии с инструкциями в задании
+"""Напишите программу, которая выводит на консоль квадрат из символов “*”, 
+с пробелом между символами, в котором строки row = 5, столбцы column = 5."""
+for row in range(5):
+    for column in range(5):
+        print("*", end=" ")
+    print()
