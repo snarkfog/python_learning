@@ -63,5 +63,5 @@ for i in range(10):
 с пробелом между символами, в котором строки row = 5, столбцы column = 5."""
 for row in range(5):
     for column in range(5):
-        print("*", end=" ")
+        print("* ", end="")
     print()
