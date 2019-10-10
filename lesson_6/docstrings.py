@@ -9,4 +9,3 @@ def function():
 function()
 help(function)
 print(function.__doc__)
-
